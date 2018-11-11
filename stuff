@@ -1,0 +1,16 @@
+
+<label for="usaaNum" class="loginHelpText">Online ID</label>
+
+<input type="text" placeholder="Online ID" name="j_username" id="usaaNum" size="25" maxlength="20" class="id j_username" style="display: block; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+
+<label for="usaaPass" class="loginHelpText">Password</label>
+
+
+<input type="password" placeholder="Password" name="j_password" id="usaaPass" size="25" maxlength="12" class="password j_password" autocomplete="off" style="display: block; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+
+<button class="login_button cta" type="submit" title=" " id="login">Log On</button>
+
+
+<label for="securityQuestionTextField">Mascot at your last high school?</label>
+
+<input type="text" size="20" maxlength="50" autocomplete="off" value="" name="table:table_body:questionRow:questionRow_body:answer" id="securityQuestionTextField" aria-describedby="id2">
