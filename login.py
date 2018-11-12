@@ -36,8 +36,9 @@ logon_field.send_keys(Keys.RETURN)
 
 username_field = driver.find_element_by_id("usaaNum")
 username_field.send_keys(userRead)
+username_field.send_keys(Keys.TAB)
 
-password_field = driver.find_element_by_id("usaaPass")
+#password_field = driver.find_element_by_id("usaaPass")
 password_field.send_keys(passRead)
 #password_field.send_keys(Keys.RETURN)
 wait.until(page_is_loaded)
