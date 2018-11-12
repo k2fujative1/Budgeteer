@@ -10,11 +10,11 @@ from selenium import webdriver
 from selenium.webdriver.support import ui
 from selenium.webdriver.common.keys import Keys
 ##Specify the files that contain the key data for logging in:
-user_file_handle=open("/mnt/c/Users/daniel/Desktop/Authentication/user.txt")
+user_file_handle=open("/mnt/c/Users/Daniel/Desktop/Authentication/user.txt")
 userRead=user_file_handle.read()
-pass_file_handle=open("/mnt/c/Users/daniel/Desktop/Authentication/pass.txt")
+pass_file_handle=open("/mnt/c/Users/Daniel/Desktop/Authentication/pass.txt")
 passRead=pass_file_handle.read()
-pin_file_handle=open("/mnt/c/Users/daniel/Desktop/Authentication/pin.txt")
+pin_file_handle=open("/mnt/c/Users/Daniel/Desktop/Authentication/pin.txt")
 pinRead=pin_file_handle.read()
 
 
@@ -22,7 +22,7 @@ def page_is_loaded(driver):
     return driver.find_element_by_tag_name("body") != None
 ##If Driver in Windows location use the following:
 #driver = webdriver.Chrome('C:/Users/daniel/Desktop/Bank-Project/chromedriver.exe')
-driver = webdriver.Chrome('/mnt/c/Users/daniel/Desktop/Bank-Project/chromedriver.exe')
+driver = webdriver.Chrome('chromedriver.exe')
 driver.get("https://www.usaa.com/")
 wait = ui.WebDriverWait(driver, 5)
 wait.until(page_is_loaded)
@@ -32,7 +32,7 @@ wait.until(page_is_loaded)
 #    fileObject.close()
 
 logon_field = driver.find_element_by_id("usaa-my-profile")
-logon_field.send_keys(Keys.RETURN)
+#logon_field.send_keys(Keys.RETURN)
 
 username_field = driver.find_element_by_id("usaaNum")
 username_field.send_keys(userRead)
